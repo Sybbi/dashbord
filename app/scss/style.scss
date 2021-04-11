@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+/* переменные (узнать почему не работает) */
+$grey:#A1A6BE;
+
+html {
+  
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px ;
+  line-height: 19px;
+  background-color: #E5E5E5;
+}
+
+.link {
+  color: #43E8FF;
+}
+.organizacion {
+  max-width: 100%;
+  margin:  auto;
+}
+.activ {
+  background: radial-gradient(133.33% 2508.35% at -4.59% -10%, #32E6FF 0%, rgba(0, 255, 209, 0.81) 100%), #43E8FF;
+  border-radius: 10px;
+  padding:5px 0px 5px 0px;
+  color:#000;
+}
+.activ-black {
+  color:#000 !important;
+}
+.btn-white {
+  background: #FFFFFF;
+  border-radius: 6px;
+  padding: 7px 30px 7px 30px;
+  color:#23273A;
+  text-decoration:none;
+}
+.fz-12 {
+  font-size: 12px;
+}
+.lh-16 {
+  line-height: 16px;
+}
+.color-red {
+  color: #FF8991;
+}
+
+
+/* меню  */
+menu {
+  position: relative;
+  background: #1F2339;
+  width: 64px;
+  margin: 0;
+  transition: width 0.3s;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  z-index: 1;
+  overflow-x: hidden;
+}
+menu.big {
+  background: #1F2339;
+  width: 241px;
+  transition: width 0.3s;
+  min-width: 241px;
+}
+
+.dashbord {
+  background-color: #4D5474;;
+  padding-left: 40px;
+  padding-top:50px; 
+  padding-right: 79px;
+  padding-bottom: 68px;
+  &_header {
+    padding-bottom: 52px;
+  }
+  &_header-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color:#fff;
+  }
+  &_header-setting .right-img  {
+      margin-right:20px;
+  }
+}
+
+/* общее по карточкам */
+
+.dashbord_card {
+  &-item {
+    position: relative;
+    padding:20px;
+    background: #383E57;
+    box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 18px;
+    height: 100%;
+    overflow: hidden;
+    &-title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      color: #FFFFFF;
+    }
+    &-subtitle {
+      color: #FFFFFF;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    &-content {
+
+    }
+  }
+}
+
+/* evant-card */
+
+.evant_card {
+  &-item {
+    position: relative;
+    padding:20px;
+    background: #383E57;
+    box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 18px;
+    overflow: hidden;
+    &-title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      color: #FFFFFF;
+    }
+  }
+}
+
+
+/* Работа с полями */
+.work-with-fields-img {
+  text-align: end;
+}
+
+/* Статистика урожая */
+
+/* Погода */
+.weather_content {
+  color:#fff;
+}
+.weather_index {
+  &-one {
+    margin-bottom: 30px;
+    &-date {
+      margin-top:25px
+    }
+    &-thermometer {
+      font-weight: 300;
+      font-size: 80px;
+      line-height: 109px;
+      letter-spacing: -0.05em;
+      padding-right:23px;
+    }
+  }
+  &-two {
+    color:#A1A6BE;
+
+    &-text-right {
+      padding-right: 72px;
+    }
+  }
+}
+
+/* Отчёты и статистика  */
+.reports table th {
+  padding:0 30px 0 0;
+  color: #FFFFFF;
+  border-bottom: 1px solid #151E41;
+}
+.reports table td {
+  padding:0 30px 0 0;
+  color: #FFFFFF;
+  border-bottom: 1px solid #151E41;
+  border-right: 1px solid #151E41;;
+}
+.reports table th + th  {
+  padding:10px 30px 10px 10px;
+}
+.reports table td + td {
+  padding:10px 30px 10px 10px;
+}
+.reports table td + td + td {
+  border-right:none;
+}
+
+ 
+/* сотрудники  */
+
+.employees {
+  
+  &_inner {
+    color: #fff;
+    margin-bottom:10px;
+    & span {
+      color:#A1A6BE;
+    }
+  }
+}
+
+/* статистика */
+.statistic {
+
+  &-select {
+    color:#43E8FF;
+    font-weight: 600;
+  }
+  &-select:after {
+    content: url(.././images/statik/drop-down.svg);
+    color:#43E8FF;
+    margin-left: 10px;
+  }
+}
+.quantity {
+  color: #A1A6BE;
+}
+.year-up::before {
+  content: url(../images/statik/2020.svg);
+  margin-right: 20px;
+ }
+.year-down::before {
+  content: url(../images/statik/2019.svg);
+  margin-right: 20px;
+ }
+
+
+/* rented */
+.rented::after {
+  content: url(../images/rented/star.svg);
+  margin-left: 20px;
+} 
+
+.rented {
+    &-grafik {
+      position: relative;
+      overflow: hidden; 
+      width: 272px;
+      height: 213px;
+    }
+
+    &-img {
+      position: absolute; 
+      top:17px;
+    }
+
+    &-table {
+      position: relative; 
+      top:44px;
+
+      &_grafik {
+        border-left:1px solid #000;
+        border-right:1px solid #000;
+        height: 150px;
+        top:10px
+      }
+
+      &_text {
+        border-top:1px solid #000;
+        border-right:1px solid #000;
+        width:135px;
+        text-align:center;
+      } 
+    } 
+}
+/* eventCard */
+.razdel {
+  color:#151E41; 
+  height: 1px;
+  margin:0 -20px 0 -20px;
+}
+
+/* to do */
+
+/* мобильная верия, перенести по максим bootstrap, проаписаить js для меню */
